@@ -1,17 +1,80 @@
-#heading{
-    color: blue;
-    text-align: center;
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
-    border: 2px solid black;
-    padding: 10px;
+    background-color: #f8f8f8;
+}
+
+.header-component-container{
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+   
+.logo-title-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-left: 20px;
+}
+.menu-list-cart-container{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    margin-right: 20px;
+}
+.menu-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-align: end; 
+    gap: 10px;
+    margin-left:200px;
     
 }
-.headingjsx{
-    color: green;
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 30px;
-    border: 2px solid red;
-    padding: 10px;
+.cart-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.restaurant-card-container{
+    width: 300px;
+    background-color:#b1b2b3;
+    border: 1px solid #991616;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+
+    
+}
+
+.restaurant-card-container:hover{
+    transform: scale(1.05);
+   transition: transform 0.3s;
+    
+}
+.restaurant-image{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.restaurant-list-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    padding: 20px;
 }
