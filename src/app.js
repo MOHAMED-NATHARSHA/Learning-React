@@ -15,6 +15,8 @@ const Applayout = () => (
         <Headercomponent />
         <BodyComponent />
        {/* <FooterComponent /> */}
+       
+       
     </div>  
 )
 
