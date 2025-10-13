@@ -3,7 +3,7 @@ import { RESTAURANT_IMG_URL,SWIGGY_IMG_URL} from "../utils/constants";
 const Restaurantcardcomponent = ({name, cuisines, avgRating, cloudinaryImageId}) => {
     return (
      
-
+     <>   
     <div className="restaurant-card-container m-3 p-3">
         <div className="restaurant-image-container">
             <a href="/">
@@ -16,6 +16,7 @@ const Restaurantcardcomponent = ({name, cuisines, avgRating, cloudinaryImageId})
             <p className="restaurant-rating">Rating: {avgRating}</p>
         </div>
     </div>
+    </>
 )};
 
 export default Restaurantcardcomponent;
