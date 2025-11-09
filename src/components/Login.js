@@ -15,4 +15,4 @@ const LoginComponent = () => {
         </div>
     );
 }
-export default LoginComponent;
+export default LoginComponent

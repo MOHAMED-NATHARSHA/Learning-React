@@ -6,9 +6,9 @@ const Restaurantcardcomponent = ({name, cuisines, avgRating, cloudinaryImageId})
      <>   
     <div className="restaurant-card-container m-3 p-3">
         <div className="restaurant-image-container">
-            <a href="/">
+
                 <img src={SWIGGY_IMG_URL + cloudinaryImageId} alt="Restaurant" className="restaurant-image" />
-            </a>
+            
         </div>
         <div className="restaurant-details-container">
             <h3 className="restaurant-name">{name.toUpperCase()}</h3>

@@ -6,6 +6,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import Headercomponent from "./components/Header";
 import BodyComponent from "./components/Body";
 import FooterComponent from "./components/Footer";
+import RestaurantMenu from "./components/RestaurantMenu";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import About from "./components/About";
 import Contact from "./components/Contact";
@@ -49,6 +50,10 @@ const appRouter = createBrowserRouter([
     {
         path:"/contact",
         element:<Contact />
+    },
+    {
+        path:"/restaurant/:resId",
+        element:<RestaurantMenu />
     }
 
         ],

@@ -2,12 +2,20 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
-
+    white-space: normal;
+    overflow-wrap: break-word;
+    
 }
+
 a{
     text-decoration: none;
 }
-
+h3{
+    font-size: 25px;
+}
+p{
+    font-family:"fantasy";
+}
 body{
     margin: 0;
     padding: 0;
@@ -16,12 +24,19 @@ body{
 }
 
 .header-component-container{
+    
+    height: 60px;
+    width: 100%;  
+    max-width: 100%;  
     background-color: #333;
     color: #fff;
     padding: 10px 0;
-    text-align: center;
+    margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
+    z-index: 1000;
+    position: fixed;
+
 }
    
 .logo-title-container{
@@ -77,6 +92,8 @@ body{
 }
 .restaurant-card-container{
     width: 300px;
+    height: 500px;
+    overflow-wrap: break-word;
     background-color:#b1b2b3;
     border: 1px solid  #615f5f;
     box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
@@ -84,14 +101,15 @@ body{
     
 }
 
-.restaurant-card-container:active{
+.restaurant-card-container:hover{
     transform: scale(1.05);
    transition: transform 3s;
     
 }
 .restaurant-image{
-    width: 100%;
-    height: 200px;
+
+    width: 250px;
+    height: 250px;
     object-fit: cover;
 }
 .restaurant-list-container{
@@ -103,4 +121,58 @@ body{
 }
 .login-btn {
     border-radius: 50%;
+}
+
+.restaurant-menu-container{
+    display: flex;
+    justify-content: center;
+   
+    height: 100vh;
+    padding: 150px;
+    margin:15px;
+}
+.linkClass{
+    color:black;
+    height:500px;
+}
+.footer-component-container{
+   
+    bottom:0;
+    height: 60px;
+    width: 100%;  
+    max-width: 100%;  
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+.app-layout-container{
+    display: flex;
+    flex-direction: column;
+    
+    min-height: 100vh;
+}
+.user-card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid  #615f5f;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    font-size: 16px;
+    flex-wrap: wrap;
+}
+.about-us-container{
+    padding: 50px;
+    margin: 50px;
+    border: 1px solid  #615f5f;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+    background-color: #fff;
 }
